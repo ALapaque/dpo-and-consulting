@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "image": "assets/imgs/portfolio/gallery/1.jpg",
+    "image": "assets/imgs/portfolio/gallery/1.png",
     "number": "01.",
-    "type": "Digital",
-    "title": "Luxury Glassware",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "type": "Web application",
+    "title": "Messenger",
+    "text": "Here a basic clone of messenger, using realtime technology (Pusher)"
   },
   {
     "id": 2,
-    "image": "assets/imgs/portfolio/gallery/2.jpg",
+    "image": "assets/imgs/portfolio/gallery/2.png",
     "number": "02.",
-    "type": "Marketing",
-    "title": "Brand Identity",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "type": "SaaS",
+    "title": "My planning",
+    "text": "This software was a team of speechtherapist in order to manage their daily tasks"
   },
   {
     "id": 3,
-    "image": "assets/imgs/portfolio/gallery/3.jpg",
+    "image": "assets/imgs/portfolio/gallery/3.png",
     "number": "03.",
-    "type": "Design",
-    "title": "Roseville Pottery",
-    "text": "We craft premium designs for agencies and global brands around the globe."
+    "type": "Website",
+    "title": "Jk studio",
+    "text": "This is a website made for a friend of mine who is a photographer and wanted to be able to display is work to his potential clients"
   }
 ]

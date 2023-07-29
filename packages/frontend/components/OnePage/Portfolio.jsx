@@ -53,7 +53,7 @@ function Portfolio({ lightMode }) {
   }
 
   return (
-    <section className="portfolio-fixed">
+    <section id={'portoflio'} className="portfolio-fixed">
       <div className="container-fluid rest">
         <div className="row">
           <div className="col-lg-6 rest" style={{ position: 'relative' }}>

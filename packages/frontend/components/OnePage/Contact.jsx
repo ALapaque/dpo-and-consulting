@@ -2,7 +2,7 @@ import React from 'react';
 
 function Contact() {
   return (
-    <section className="contact-crev no-crev section-padding">
+    <section id={'contact'} className="contact-crev no-crev section-padding">
       <div className="container">
         <div className="row">
           <div className="col-lg-5">

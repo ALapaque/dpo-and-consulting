@@ -1,4 +1,16 @@
 {
-  "author": "ThemesCamp",
-  "author_link": "https://themeforest.net/user/themescamp"
+  "website": {
+    "name": "DPO and Consulting"
+  },
+  "author": {
+    "name": "Amaury Lapaque",
+    "link": "https://amaury-lapaque.io"
+  },
+  "company": {
+    "address": "Rue de la croix 24, 6042, Lodelinsart",
+    "email": "contact@dpo-and-consulting.be",
+    "phone": null,
+    "facebook": null,
+    "linkedin": null
+  }
 }

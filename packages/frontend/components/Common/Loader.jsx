@@ -1,4 +1,9 @@
 import React, { useEffect } from 'react';
+import styled from '@emotion/styled'
+
+const Dot = styled.span`
+  font-size: 1.5rem;
+`
 
 function Loader() {
   useEffect(() => {
@@ -31,6 +36,9 @@ function Loader() {
             <span>i</span>
             <span>n</span>
             <span>g</span>
+            <Dot>.</Dot>
+            <Dot>.</Dot>
+            <Dot>.</Dot>
           </h2>
         </span>
       </div>

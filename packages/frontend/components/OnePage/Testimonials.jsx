@@ -63,7 +63,7 @@ function Testimonials({ lightMode }) {
   }, []);
 
   return (
-    <section className="testim-crv section-padding main-colorbg text-dark position-re">
+    <section id={'testimonials'} className="testim-crv section-padding main-colorbg text-dark position-re">
       <div className="container ontop">
         <div className="row">
           <div className="col-md-6">
@@ -158,7 +158,7 @@ function Testimonials({ lightMode }) {
                         <SwiperSlide key={item}>
                           <div className="item">
                             <div className="img icon-img-100">
-                              <a href={appData.author_link}>
+                              <a href={appData.author.link}>
                                 <img src={'/dark/' + item} alt="" />
                               </a>
                             </div>

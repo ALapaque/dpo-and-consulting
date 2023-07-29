@@ -1,53 +1,43 @@
 import React, { useEffect } from 'react';
+import Logo from '@/components/Common/Logo'
+import useMenu from '@/hooks/useMenu'
 
 function Navigation({ lightMode, alwaysDark, darkOnScroll }) {
+  const { isOpen, toggle } = useMenu(lightMode, alwaysDark)
+
   useEffect(() => {
     if (darkOnScroll) {
       let nav = document.querySelector('#navi');
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 500) {
-          nav.className = "topnav dark change nav-scroll";
-          nav.querySelector('img').src = "/dark/assets/imgs/logo-dark.png";
+        if (window.scrollY > (window.visualViewport.height - 77)) {
+          nav.className = 'topnav dark change nav-scroll';
+          nav.querySelector('h1.logo').style.color = 'black';
         } else {
-          nav.className = "topnav";
-          nav.querySelector('img').src = "/dark/assets/imgs/logo-light.png";
+          nav.className = 'topnav';
+          nav.querySelector('h1.logo').style.color = 'white';
         }
       })
     }
-  }, [darkOnScroll]);
-
-  function toggleMenu(event) {
-    let menu = document.querySelector('.hamenu');
-    let nav = document.querySelector('#navi');
-
-    if (event.currentTarget.classList.contains('open')) {
-      event.currentTarget.classList.remove('open')
-      menu?.classList.remove('open');
-      menu.style.left = `-100%`;
-      if (lightMode && !alwaysDark) {
-        nav.classList.remove('navlit');
-        nav.querySelector('img').src = "/dark/assets/imgs/logo-light.png";
-      }
-    } else {
-      event.currentTarget.classList.add('open')
-      menu?.classList.add('open');
-      menu.style.left = 0;
-      if (lightMode && !alwaysDark) {
-        nav.classList.add('navlit');
-        nav.querySelector('img').src = "/dark/assets/imgs/logo-dark.png";
-      }
-    }
-  }
+  }, [ darkOnScroll ]);
 
   return (
-    <div id="navi" className={`topnav ${alwaysDark && 'navlit'}`}>
-      <div className="container">
-        <div className="logo icon-img-120">
-          <a href="#"><img src={`/dark/assets/imgs/logo-${alwaysDark ? 'dark' : 'light'}.png`} alt="" /></a>
+    <div id='navi' className={`topnav ${alwaysDark && 'navlit'}`}>
+      <div className='container'>
+        <div className='logo'>
+          <a href='#'>
+            <Logo/>
+          </a>
         </div>
-        <div className="menu-icon cursor-pointer" onClick={toggleMenu}>
-          <span className="icon"><i></i><i></i></span>
-          <span className="text"><span className="word">Menu</span></span>
+        <div
+          className={`menu-icon cursor-pointer ${isOpen && 'open'}`}
+          onClick={toggle}
+          style={{
+            display: 'flex',
+            gap: '8px',
+            alignItems: 'center'
+          }}>
+          <span className='icon'><i></i><i></i></span>
+          <span>{isOpen ? 'Close' : 'Menu'}</span>
         </div>
       </div>
     </div>

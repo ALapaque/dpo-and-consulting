@@ -10,36 +10,42 @@ function Marq() {
               <div className="slide-har st1 non-strok">
                 <div className="box">
                   <div className="item">
-                    <h4>UI-UX <span className="stroke opacity-4">Experience</span></h4>
+                    <h4>Web Development</h4>
                   </div>
                   <div className="item">
-                    <h4>Web <span className="stroke opacity-4">Development</span></h4>
+                    <h4><span className="stroke opacity-4">GDPR Auditing</span></h4>
                   </div>
                   <div className="item">
-                    <h4>Digital <span className="stroke opacity-4">Marketing</span></h4>
+                    <h4>Frontend Architecture</h4>
                   </div>
                   <div className="item">
-                    <h4>Product <span className="stroke opacity-4">Design</span></h4>
+                    <h4><span className="stroke opacity-4">Mockups Integration</span></h4>
                   </div>
                   <div className="item">
-                    <h4>Mobile <span className="stroke opacity-4">Solutions</span></h4>
+                    <h4>Cross Platform Development</h4>
+                  </div>
+                  <div className="item">
+                    <h4><span className="stroke opacity-4">Custom Development</span></h4>
                   </div>
                 </div>
                 <div className="box">
                   <div className="item">
-                    <h4>UI-UX <span className="stroke opacity-4">Experience</span></h4>
+                    <h4>Web Development</h4>
                   </div>
                   <div className="item">
-                    <h4>Web <span className="stroke opacity-4">Development</span></h4>
+                    <h4><span className="stroke opacity-4">GDPR Auditing</span></h4>
                   </div>
                   <div className="item">
-                    <h4>Digital <span className="stroke opacity-4">Marketing</span></h4>
+                    <h4>Frontend Architecture</h4>
                   </div>
                   <div className="item">
-                    <h4>Product <span className="stroke opacity-4">Design</span></h4>
+                    <h4><span className="stroke opacity-4">Mockups Integration</span></h4>
                   </div>
                   <div className="item">
-                    <h4>Mobile <span className="stroke opacity-4">Solutions</span></h4>
+                    <h4>Cross Platform Development</h4>
+                  </div>
+                  <div className="item">
+                    <h4><span className="stroke opacity-4">Custom Development</span></h4>
                   </div>
                 </div>
               </div>

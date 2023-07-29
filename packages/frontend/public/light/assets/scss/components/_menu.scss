@@ -42,7 +42,7 @@
 			.search-form .search-icon{
 				color: #1d1d1d;
 			}
-	
+
 			.search-form .search-icon:after{
 				border-color: rgba(0,0,0,.1);
 			}
@@ -94,7 +94,7 @@
 	}
 
 	.navbar-nav{
-  
+
 		.nav-link{
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -126,7 +126,7 @@
         min-width: 255px;
         transform: translateY(20px);
         transition: all .4s;
-    
+
         &.show{
             opacity: 1;
             visibility: visible;
@@ -143,7 +143,7 @@
 				}
 			}
 		}
-    
+
         .dropdown-item{
             font-size: 13px;
             color: #1d1d1d;
@@ -176,7 +176,7 @@
 				position: absolute;
 				right: 15px;
 			}
-    
+
             &:after{
                 content: '';
                 width: 0px;
@@ -187,11 +187,11 @@
                 top: 50%;
                 transition: all .4s;
             }
-    
+
             &:hover{
                 padding-left: 30px;
                 background: transparent;
-                
+
                 &:after{
                     width: 10px;
                 }
@@ -235,7 +235,7 @@
 			}
 		}
 	}
-    
+
     .search-form{
         position: relative;
 
@@ -286,7 +286,7 @@
                 border-radius: 5px;
             }
         }
-        
+
         .search-icon{
             position: relative;
             padding: 25px 30px;
@@ -336,7 +336,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 999999;
+	z-index: 9;
 	padding: 25px 0;
 	color: #fff;
 	transition: all .7s;
@@ -382,7 +382,7 @@
 					opacity: 0;
 					transition-delay: .4s;
 				}
-	
+
 				&:after{
 					opacity: 1;
 					transition-delay: .6s;
@@ -391,7 +391,7 @@
 
 			.icon{
 				width: 20px;
-				
+
 				i{
 					position: absolute;
 					top: calc(50% - 2px);
@@ -439,7 +439,7 @@
 		.icon{
 			display: table-cell;
 			position: relative;
-			
+
 			i{
 				display: block;
 				width: 20px;
@@ -489,7 +489,7 @@
 	background: $sub_bg;
 	padding: 120px 30px 30px;
 	overflow: hidden;
-	z-index: 9999;
+	z-index: 8;
 	transition: all 0.5s cubic-bezier(1, 0, 0.55, 1);
 
 	&.open{
@@ -499,7 +499,7 @@
 			.main-menu{
 
 				> li{
-					
+
 					.link{
 						transform: translateY(0);
 						transition-delay: 1s;
@@ -541,11 +541,11 @@
 		&::-webkit-scrollbar {
 			width: 5px;
 		}
-		
+
 		&::-webkit-scrollbar-track {
 			background: transparent;
 		}
-		
+
 		&::-webkit-scrollbar-thumb {
 			background: $main-color;
 			border-radius: 10px;
@@ -557,7 +557,7 @@
 
 			> li{
 				transition: all .5s;
-				
+
 				.link{
 					font-size: 40px;
 					font-weight: 700;
@@ -627,11 +627,11 @@
 				}
 
 				&.hoverd{
-					
+
 					.link{
 
 						.fill-text{
-	
+
 							&:after{
 								width: 0;
 							  }
@@ -650,7 +650,7 @@
 					line-height: 1;
 					font-size: 22px;
 					font-weight: 400;
-					
+
 					a{
 						padding: 12px 10px;
 						opacity: .6;
@@ -668,7 +668,7 @@
 	.menu-text{
 		position: relative;
 		height: 100%;
-		
+
 		.text{
 			position: absolute;
 			right: 0;
@@ -724,7 +724,7 @@
 			transform: translateY(30px);
 			opacity: 0;
             transition: all .7s;
-	
+
 			.form-group{
 				position: relative;
 
@@ -736,7 +736,7 @@
 					border-radius: 5px;
 					width: 100%;
 				}
-	
+
 				button{
 					position: absolute;
 					top: 0;
@@ -787,7 +787,7 @@
         border-right: 1px solid rgba(255,255,255,.1);
 
         .header-logo{
-           
+
             a{
                 height: 100px;
             }
