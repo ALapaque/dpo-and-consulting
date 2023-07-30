@@ -5,8 +5,6 @@ import Head from 'next/head';
 import Layout from '@/layouts/default';
 //= Components
 import Loader from '@/components/Common/Loader';
-import LinesTwo from '@/components/Common/LinesTwo';
-import Navbar from '@/components/Common/MainNavbar';
 import Header from '@/components/OnePage/Header';
 import About from '@/components/OnePage/About';
 import Marq from '@/components/OnePage/Marq';
@@ -18,7 +16,7 @@ import Footer from '@/components/OnePage/Footer';
 import Navigation from '@/components/Showcases/Navigation';
 import Menu from '@/components/Showcases/Menu';
 
-function Contact() {
+function ContactPage() {
   useEffect(() => {
     document.body.classList.add('sub-bg');
     return () => document.body.classList.remove('sub-bg');
@@ -47,6 +45,6 @@ function Contact() {
   )
 }
 
-Contact.getLayout = page => <Layout lightMode>{page}</Layout>
+ContactPage.getLayout = page => <Layout lightMode>{page}</Layout>
 
-export default Contact;
+export default ContactPage;
