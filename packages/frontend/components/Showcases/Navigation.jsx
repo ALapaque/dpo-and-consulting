@@ -24,7 +24,7 @@ function Navigation({ lightMode, alwaysDark, darkOnScroll }) {
     <div id='navi' className={`topnav ${alwaysDark && 'navlit'}`}>
       <div className='container'>
         <div className='logo'>
-          <a href='#'>
+          <a href='/'>
             <Logo/>
           </a>
         </div>

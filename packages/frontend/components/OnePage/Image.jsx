@@ -8,7 +8,7 @@ function Image() {
   }, []);
 
   return (
-    <div className="back-image states bg-img parallaxie" data-background="/dark/assets/imgs/background/13.jpg"
+    <div className="back-image states bg-img parallaxie" data-background="/assets/images/hero_3.jpg"
       data-overlay-dark="3">
       <div className="container box position-re">
         <ul className="rest">

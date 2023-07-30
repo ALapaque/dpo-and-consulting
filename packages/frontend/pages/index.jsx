@@ -12,11 +12,7 @@ import About from '@/components/OnePage/About';
 import Marq from '@/components/OnePage/Marq';
 import Services from '@/components/OnePage/Services';
 import Portfolio from '@/components/OnePage/Portfolio';
-import Intro from '@/components/OnePage/Intro';
-import Testimonials from '@/components/OnePage/Testimonials';
 import ImageSection from '@/components/OnePage/Image';
-import Team from '@/components/OnePage/Team';
-import Blog from '@/components/OnePage/Blog';
 import Contact from '@/components/OnePage/Contact';
 import Footer from '@/components/OnePage/Footer';
 import Navigation from '@/components/Showcases/Navigation';
@@ -43,7 +39,6 @@ function HomeOnePageLight() {
         <Marq />
         <Services />
         <Portfolio />
-        <Testimonials />
         <ImageSection />
         <Contact />
       </main>

@@ -89,17 +89,21 @@ function Services({ lightMode }) {
               <Swiper {...swiperOptions} id='content-carousel-container-unq-serv'>
                 {
                   data.map((item, index) => (
-                    <SwiperSlide key={item.id} className='wow fadeIn'
-                                 data-wow-delay={`${(data.length - index + 1) * 0.2}s`}>
+                    <SwiperSlide
+                      key={item.id}
+                      className='wow fadeIn'
+                      data-wow-delay={`${(data.length - index + 1) * 0.2}s`}>
                       <div className='item'>
                         <div className='icon-img-60 mb-40'>
-                          <img src={`${lightMode ? '/light/' : '/dark/'}${item.image}`} alt=''/>
+                          <img src={item.image} alt={item.title}/>
                         </div>
                         <h6 className='mb-15'>{item.title}</h6>
-                        <p dangerouslySetInnerHTML={{
-                          __html: item.text
-                        }}/>
-                        <Link href='/dark/page-services' className='arrow mt-40'>
+                        {item?.text && (
+                          <p dangerouslySetInnerHTML={{
+                            __html: item.text
+                          }}/>
+                        )}
+                        <Link href={`/service/${encodeURIComponent(item.title)}`} className='arrow mt-40'>
                           <span className='circle'>
                             <svg width='18' height='18' viewBox='0 0 18 18' fill='none'
                                  xmlns='http://www.w3.org/2000/svg'>

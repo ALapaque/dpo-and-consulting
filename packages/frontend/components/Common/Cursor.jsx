@@ -1,7 +1,14 @@
 import React, { useEffect } from 'react';
+import useIsMobile from '@/hooks/useIsMobile'
 
 function Cursor() {
+  const isMobile = useIsMobile()
+
   useEffect(() => {
+    if (isMobile) {
+      return
+    }
+
     const link = document.querySelectorAll('.hover-this');
     const cursor = document.querySelector('.cursor');
 
@@ -26,7 +33,7 @@ function Cursor() {
     link.forEach(b => b.addEventListener('mouseleave', animateit));
     window.addEventListener('mousemove', editCursor);
 
-    document.querySelectorAll("a, .cursor-pointer").forEach(el => {
+    document.querySelectorAll('a, .cursor-pointer').forEach(el => {
       el.addEventListener('mousemove', () => {
         cursor.classList.add('cursor-active')
       });
@@ -34,10 +41,14 @@ function Cursor() {
         cursor.classList.remove('cursor-active')
       });
     });
-  }, []);
+  }, [ isMobile ]);
+
+  if (isMobile) {
+    return null
+  }
 
   return (
-    <div className="cursor"></div>
+    <div className='cursor'></div>
   )
 }
 

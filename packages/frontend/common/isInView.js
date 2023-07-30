@@ -1,3 +1,8 @@
+const INTERSECTION_OBSERVER_OPTIONS = {
+  root: null,
+  rootMargin: '0px 0px -50% 0px',
+}
+
 export default function isInView(options) {
   if (!options.selector || !options.callback) return;
 
@@ -8,7 +13,7 @@ export default function isInView(options) {
         else {
           if (options.whenOutOfView) options.whenOutOfView(entries[0].target)
         }
-      }).observe(element);
+      }, INTERSECTION_OBSERVER_OPTIONS).observe(element);
     })
   } else {
     new IntersectionObserver((entries) => {
@@ -16,6 +21,6 @@ export default function isInView(options) {
       else {
         if (options.whenOutOfView) options.whenOutOfView(entries[0].target)
       }
-    }).observe(document.querySelector(options.selector));
+    }, INTERSECTION_OBSERVER_OPTIONS).observe(document.querySelector(options.selector));
   }
 }

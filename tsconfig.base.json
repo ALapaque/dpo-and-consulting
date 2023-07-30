@@ -20,12 +20,6 @@
     "paths": {
       "@/*": [
         "packages/frontend/*"
-      ],
-      "@/components": [
-        "packages/components/src/index.js"
-      ],
-      "@/layouts": [
-        "packages/layouts/src/index.js"
       ]
     }
   },

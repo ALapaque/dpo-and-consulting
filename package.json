@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "dev:frontend": "nx serve frontend",
-    "build:frontend": "nx build frontend",
+    "build:frontend": "nx run-many --target=build --skip-cache",
     "update:lock": "pnpm import && yarn import"
   },
   "private": true,

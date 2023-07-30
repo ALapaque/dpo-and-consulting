@@ -1,32 +1,32 @@
 [
   {
     "id": 1,
-    "title": "Web development",
-    "text": "- Custom website design and development</br></br>- Implementation of content management systems (CMS) such as WordPress, Webflow</br></br>- Development of custom web applications to meet your business needs using new technologies such as Angular, ReactJS, VueJS</br></br>- Performance optimization of your website for fast loading times</br></br>- Integration of features such as contact forms, image galleries, e-commerce stores, and blogs</br></br>- Maintenance and technical support for your existing website",
-    "image": "assets/imgs/serv-icons/01-dark.svg"
+    "title": "GDPR audit",
+    "image": "https://img.icons8.com/?size=512&id=2kWA2ZvcSwjO&format=png"
   },
   {
     "id": 2,
-    "title": "Project stack architecture",
-    "text": "- Analysis and evaluation of existing software systems to identify opportunities for architecture improvement</br></br>- Custom software architecture design to meet your business needs</br></br>- Development of detailed architecture plans to guide software implementation and maintenance</br></br>- Development of scalable and modular software solutions to adapt to your business needs over time</br></br>- Implementation of software architecture practices to ensure software quality, security, and maintainability",
-    "image": "assets/imgs/serv-icons/02-dark.svg"
+    "title": "Web development",
+    "image": "https://cdn-icons-png.flaticon.com/512/7991/7991055.png"
   },
   {
     "id": 3,
-    "title": "Website optimization",
-    "text": "- Website speed optimization to improve page load times and reduce bounce rates</br></br>- Search engine optimization (SEO) to improve your website's visibility and ranking on search engines</br></br>- Mobile optimization to ensure that your website is fully functional and easy to use on all devices</br></br>- User experience (UX) optimization to improve the overall usability and engagement of your website</br></br>- Content optimization to ensure that your website's content is optimized for both search engines and users</br></br>- Technical optimization to ensure that your website is running smoothly and efficiently",
-    "image": "assets/imgs/serv-icons/03-dark.svg"
+    "title": "Project stack architecture",
+    "image": "https://cdn-icons-png.flaticon.com/512/8016/8016635.png"
   },
   {
     "id": 4,
-    "title": "Crossplatform development",
-    "text": "- Implementation of cross-platform frameworks such as React Native, Ionic, Capacitor, and Flutter</br></br>- Integration of features such as push notifications, location services, and social media integration</br></br>- Performance optimization of your mobile application for fast loading times and smooth user experience</br></br>- Maintenance and technical support for your existing mobile application",
-    "image": "assets/imgs/serv-icons/04-dark.svg"
+    "title": "Website optimization",
+    "image": "https://cdn-icons-png.flaticon.com/512/11517/11517859.png"
   },
   {
     "id": 5,
+    "title": "Crossplatform development",
+    "image": "https://cdn-icons-png.flaticon.com/512/4661/4661538.png"
+  },
+  {
+    "id": 6,
     "title": "Frontend architecture",
-    "text": "- Analysis and evaluation of existing frontend systems to identify opportunities for architecture improvement</br></br>- Custom frontend architecture design to meet your business needs</br></br>- Development of detailed frontend architecture plans to guide frontend implementation and maintenance</br></br>- Development of scalable and modular frontend solutions to adapt to your business needs over time</br>\nImplementation of frontend architecture practices to ensure frontend quality, security, and maintainability",
-    "image": "assets/imgs/serv-icons/05-dark.svg"
+    "image": "https://cdn-icons-png.flaticon.com/512/2721/2721305.png"
   }
 ]
