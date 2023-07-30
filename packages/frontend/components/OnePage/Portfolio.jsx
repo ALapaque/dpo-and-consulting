@@ -53,7 +53,7 @@ function Portfolio() {
   }
 
   return (
-    <section id={'portoflio'} className='portfolio-fixed'>
+    <section id={'projects'} className='portfolio-fixed'>
       <div className='container-fluid rest'>
         <div className='row'>
           <div className='col-lg-6 rest' style={{ position: 'relative' }}>
