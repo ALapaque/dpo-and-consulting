@@ -2,7 +2,12 @@ import React from 'react';
 
 function Marq() {
   return (
-    <section className="serv-marq ontop">
+    <section
+      className="serv-marq ontop"
+      style={{
+        maxWidth: '100vw',
+        overflow: 'hidden',
+      }}>
       <div className="container-fluid">
         <div className="row">
           <div className="col-12">
