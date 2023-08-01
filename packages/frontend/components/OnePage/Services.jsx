@@ -81,7 +81,7 @@ function Services({ lightMode }) {
           </div>
         </div>
       </div>
-      <div className='container-fluid rest'>
+      <div className='container-fluid'>
         <div className='serv-items-crev'>
           <div className='serv-swiper'>
             {
