@@ -5,48 +5,40 @@ import Head from 'next/head';
 import Layout from '@/layouts/default';
 //= Components
 import Loader from '@/components/Common/Loader';
-import LinesTwo from '@/components/Common/LinesTwo';
 import Navbar from '@/components/Common/MainNavbar';
-import Header from '@/components/OnePage/Header';
-import About from '@/components/OnePage/About';
-import Marq from '@/components/OnePage/Marq';
-import Services from '@/components/OnePage/Services';
-import Portfolio from '@/components/OnePage/Portfolio';
-import ImageSection from '@/components/OnePage/Image';
-import Contact from '@/components/OnePage/Contact';
-import Footer from '@/components/OnePage/Footer';
-import Navigation from '@/components/Showcases/Navigation';
-import Menu from '@/components/Showcases/Menu';
+import Header from '@/components/InnerPages/ProjectDetails/Header';
+import Content from '@/components/InnerPages/ProjectDetails/Content';
+import CallToAction from '@/components/InnerPages/ProjectDetails/CallToAction';
+import Navigation from '@/components/Showcases/Navigation'
+import Menu from '@/components/Showcases/Menu'
+import Footer from '@/components/OnePage/Footer'
 
-function ProjectByName() {
+
+function ProjectDetailsLight() {
   useEffect(() => {
-    document.body.classList.add('sub-bg');
-    return () => document.body.classList.remove('sub-bg');
+    document.body.classList.add('main-bg');
+    return () => document.body.classList.remove('main-bg');
   }, []);
 
   return (
     <>
       <Head>
-        <title>DPO and Consulting</title>
+        <title>Project detail</title>
       </Head>
 
       <Loader />
       <Navigation darkOnScroll lightMode />
       <Menu lightMode={false} />
-      <main className="main-bg">
+      <main>
         <Header />
-        <About />
-        <Marq />
-        <Services />
-        <Portfolio />
-        <ImageSection />
-        <Contact />
+        <Content />
+        <CallToAction />
       </main>
       <Footer lightMode />
     </>
   )
 }
 
-ProjectByName.getLayout = page => <Layout lightMode>{page}</Layout>
+ProjectDetailsLight.getLayout = page => <Layout lightMode>{page}</Layout>
 
-export default ProjectByName;
+export default ProjectDetailsLight;

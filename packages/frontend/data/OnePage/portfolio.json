@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "assets/images/portfolio/gallery/messenger/1.png",
+    "image": "/assets/images/portfolio/gallery/messenger/1.png",
     "number": "01.",
     "type": "Web application",
     "title": "Messenger",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "image": "assets/images/portfolio/gallery/messenger/2.png",
+    "image": "/assets/images/portfolio/gallery/my-planning/1.png",
     "number": "02.",
     "type": "SaaS",
     "title": "My planning",
@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "image": "assets/images/portfolio/gallery/messenger/3.png",
+    "image": "/assets/images/portfolio/gallery/jk-studio/1.png",
     "number": "03.",
     "type": "Website",
     "title": "Jk studio",

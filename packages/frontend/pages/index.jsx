@@ -5,13 +5,11 @@ import Head from 'next/head';
 import Layout from '@/layouts/default';
 //= Components
 import Loader from '@/components/Common/Loader';
-import LinesTwo from '@/components/Common/LinesTwo';
-import Navbar from '@/components/Common/MainNavbar';
 import Header from '@/components/OnePage/Header';
 import About from '@/components/OnePage/About';
 import Marq from '@/components/OnePage/Marq';
 import Services from '@/components/OnePage/Services';
-import Portfolio from '@/components/OnePage/Portfolio';
+import Portfolio from '@/components/Architecture/Portfolio';
 import ImageSection from '@/components/OnePage/Image';
 import Contact from '@/components/OnePage/Contact';
 import Footer from '@/components/OnePage/Footer';

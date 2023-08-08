@@ -2,12 +2,20 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="fr">
       <Head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="keywords" content="React Nextjs Template Geekfolio Multi-Purpose themeforest" />
-        <meta name="description" content="Geekfolio - Multi-Purpose React.js Next.js Template" />
-        <meta name="author" content="" />
+        <meta name="keywords" content="IT Consulting React Angular GDPR RGPD" />
+        <meta name="description" content="DPO-and-Consulting, we'll help transforming ideas into real" />
+        <meta name="author" content="Amaury Lapaque" />
+        {/* ------ Images ------ */}
+        <link rel='preload' href='/assets/images/portfolio/gallery/messenger/1.png' as='image' />
+        <link rel='preload' href='/assets/images/portfolio/gallery/my-planning/1.png' as='image' />
+        <link rel='preload' href='/assets/images/portfolio/gallery/jk-studio/1.png' as='image' />
+        <link rel='preload' href='/assets/images/confetti.gif' as='image' />
+        <link rel='preload' href='/assets/images/hero_1.jpg' as='image' />
+        <link rel='preload' href='/assets/images/hero_2.jpg' as='image' />
+        <link rel='preload' href='/assets/images/hero_3.jpg' as='image' />
         {/* ------ Favicon ------ */}
         <link rel="shortcut icon" href="/dark/assets/imgs/favicon.ico" />
         {/* ------ Google Fonts ------ */}

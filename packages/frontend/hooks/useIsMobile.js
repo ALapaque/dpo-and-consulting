@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PlatformUtils from '@/utiks/PlatformUtils'
+import PlatformUtils from '@/utils/PlatformUtils'
 
 const MobileDetector = () => {
   const [ isMobile, setIsMobile ] = useState(false);
