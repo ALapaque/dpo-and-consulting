@@ -32,9 +32,6 @@ function Portfolio() {
                     <h6 className='line-height-1'>From our gallery</h6>
                     <p>{data[0].type}</p>
                   </div>
-                  <div className='ml-auto'>
-                    <p className='fz-14'>© {data[0].year}</p>
-                  </div>
                 </div>
               </Link>
             </div>
@@ -53,9 +50,6 @@ function Portfolio() {
                       <div>
                         <h6 className='line-height-1'>From our gallery</h6>
                         <p>{data[1].type}</p>
-                      </div>
-                      <div className='ml-auto'>
-                        <p className='fz-14'>© {data[1].year}</p>
                       </div>
                     </div>
                   </div>
@@ -77,9 +71,6 @@ function Portfolio() {
                       <div>
                         <h6 className='line-height-1'>From our gallery</h6>
                         <p>{data[2].type}</p>
-                      </div>
-                      <div className='ml-auto'>
-                        <p className='fz-14'>© {data[2].year}</p>
                       </div>
                     </div>
                   </div>
