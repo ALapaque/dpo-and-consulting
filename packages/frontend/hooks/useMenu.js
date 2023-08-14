@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useEffect } from 'react'
 
 const useMenu = (lightMode = true, alwaysDark = false) => {
   const [ isOpen, setIsOpen ] = React.useState(false)
@@ -56,6 +57,12 @@ const useMenu = (lightMode = true, alwaysDark = false) => {
       open(event)
     }
   }
+
+  useEffect(() => {
+    return () => {
+      allowScrollOnBody();
+    }
+  }, []);
 
   return {
     isOpen,

@@ -61,29 +61,29 @@ function Menu({ lightMode }) {
                   <div className='sub-menu'>
                     <ul>
                       <li>
-                        <a href={'#about'} className='sub-link'>About us</a>
+                        <Link href={'/#about'} className='sub-link'>About us</Link>
                       </li>
                       <li>
-                        <a href={'#services'} className='sub-link'>Services</a>
+                        <Link href={'/#services'} className='sub-link'>Services</Link>
                       </li>
                       <li>
-                        <a href={'#projects'} className='sub-link'>Projects</a>
+                        <Link href={'/#projects'} className='sub-link'>Projects</Link>
                       </li>
                       <li>
-                        <a href={'#testimonials'} className='sub-link'>Testimonials</a>
+                        <Link href={'/#testimonials'} className='sub-link'>Testimonials</Link>
                       </li>
                       <li>
-                        <a href={'#news'} className='sub-link'>Latest news</a>
+                        <Link href={'/#news'} className='sub-link'>Latest news</Link>
                       </li>
                       <li>
-                        <a href={'#contact'} className='sub-link'>Contact</a>
+                        <Link href={'/#contact'} className='sub-link'>Contact</Link>
                       </li>
                     </ul>
                   </div>
                 </li>
                 <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                   <div className='o-hidden'>
-                    <Link href={'about-us'} className='link'>
+                    <Link href={'/#about-us'} className='link'>
                       <span
                         className='fill-text' data-text='About Us'>
                         About Us
@@ -93,7 +93,7 @@ function Menu({ lightMode }) {
                 </li>
                 <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                   <div className='o-hidden'>
-                    <Link href={'projects'} className='link'>
+                    <Link href={'/#projects'} className='link'>
                       <span
                         className='fill-text' data-text='Projects'>
                         Projects
@@ -103,7 +103,7 @@ function Menu({ lightMode }) {
                 </li>
                 <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                   <div className='o-hidden'>
-                    <Link href={'contact'} className='link'>
+                    <Link href={'/#contact'} className='link'>
                       <span
                         className='fill-text' data-text='Contact'>
                         Contact
@@ -122,7 +122,7 @@ function Menu({ lightMode }) {
                 {data.company.phone && (
                   <p className='underline main-color mt-5 mb-5'><a href='#0'>{data.company.phone}</a></p>
                 )}
-                <p><a href='#0'>{data.company.email}</a></p>
+                <p><Link href='#0'>{data.company.email}</Link></p>
               </div>
               {data.company.facebook || data.company.linkedin && (
                 <ul className='rest social-text d-flex mt-50 fz-13'>
@@ -134,8 +134,11 @@ function Menu({ lightMode }) {
                   )}
                   {data.company.linkedin && (
                     <li className='mr-20'>
-                      <a href={data.company.linkedin} className='hover-this'><span
-                        className='hover-anim'>LinkedIn</span></a>
+                      <Link
+                        href={data.company.linkedin}
+                        className='hover-this'>
+                        <span className='hover-anim'>LinkedIn</span>
+                      </Link>
                     </li>
                   )}
                 </ul>

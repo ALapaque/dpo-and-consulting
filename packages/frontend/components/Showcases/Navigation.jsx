@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Logo from '@/components/Common/Logo'
 import useMenu from '@/hooks/useMenu'
+import Link from 'next/link'
 
 function Navigation({ lightMode, alwaysDark, darkOnScroll }) {
   const { isOpen, toggle } = useMenu(lightMode, alwaysDark)
@@ -24,9 +25,9 @@ function Navigation({ lightMode, alwaysDark, darkOnScroll }) {
     <div id='navi' className={`topnav ${alwaysDark && 'navlit'}`}>
       <div className='container'>
         <div className='logo'>
-          <a href='/'>
+          <Link href='/'>
             <Logo/>
-          </a>
+          </Link>
         </div>
         <div
           className={`menu-icon cursor-pointer ${isOpen && 'open'}`}

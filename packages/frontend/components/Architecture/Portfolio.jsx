@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function Portfolio() {
   return (
-    <section id={'portfolio'} className='portfolio sub-bg section-padding'>
+    <section id={'projects'} className='portfolio sub-bg section-padding'>
       <div className='container'>
         <div className='sec-leter-head mb-80'>
           <div className='d-flex align-items-center'>
