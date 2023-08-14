@@ -16,6 +16,7 @@ import Footer from '@/components/OnePage/Footer';
 import Navigation from '@/components/Showcases/Navigation';
 import Menu from '@/components/Showcases/Menu';
 
+
 function HomeOnePageLight() {
   useEffect(() => {
     document.body.classList.add('sub-bg');

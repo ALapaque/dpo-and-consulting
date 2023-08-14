@@ -2,46 +2,39 @@ import React, { useEffect } from 'react';
 //= Scripts
 import parallaxie from '@/common/parallaxie';
 import useIsMobile from '@/hooks/useIsMobile';
-import data from '@/data/OnePage/portfolio.json';
 
-function Content() {
+function Content({ project }) {
   const isMobile = useIsMobile()
 
   useEffect(() => {
     parallaxie('.back-image.parallaxie', 0.4);
-  }, []);
+  }, [project]);
 
   return (
     <section className='section-padding'>
       <div className='container'>
         <div className='row'>
-          <div className='col-lg-4'>
+          <div className={`col-lg-${project.description && project.tags ? '4' : '8'}`}>
             <div className='text'>
-              <h3>We create everything digital, printable and analytical.</h3>
+              <h3>{project.text}</h3>
             </div>
           </div>
           <div className='col-lg-7 offset-lg-1'>
             <div className='text'>
-              <p className='mb-50'>Won’t seasons, appear days them stars replenish divided. All second forth. Him place
-                was seas man and gathering creepeth called fly. Them sea place lights, midst bearing fourth above.</p>
-              <div className='row'>
-                <div className='col-md-6'>
-                  <ul className='rest dot-list'>
-                    <li className='mb-15'>Brand Development</li>
-                    <li className='mb-15'>Art Direction</li>
-                    <li className='mb-15'>Marketing Strategy</li>
-                    <li className='mb-15'>Mobile App Design</li>
-                  </ul>
+              {project.description && (<p className='mb-50'>{project.description}</p>)}
+              {project.tags && (
+                <div className='row'>
+                  {project.tags.map((tag, index) => (
+                    <div className='col-md-6' key={index}>
+                      <ul className='rest dot-list'>
+                        {tag.values.map((value, index) => (
+                          <li className='mb-15' key={index}>{value}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
-                <div className='col-md-6'>
-                  <ul className='rest dot-list'>
-                    <li className='mb-15'>Content Management</li>
-                    <li className='mb-15'>System & Guides</li>
-                    <li className='mb-15'>Graphic Design</li>
-                    <li className='mb-15'>Brand Development</li>
-                  </ul>
-                </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
@@ -52,44 +45,36 @@ function Content() {
           }}>
           <div className='col-lg-4'>
             <div className='img mb-50'>
-              <img src={data[0].image} alt=''/>
+              <img src={project.images[0].url} alt={project.images[0].alt}/>
             </div>
           </div>
           <div className='col-lg-4'>
             <div className='img mb-50'>
-              <img src={data[0].image} alt=''/>
+              <img src={project.images[1].url} alt={project.images[1].alt}/>
             </div>
           </div>
           <div className='col-lg-4'>
             <div className='img mb-50'>
-              <img src={data[0].image} alt=''/>
+              <img src={project.images[2].url} alt={project.images[2].alt}/>
             </div>
           </div>
         </div>
 
-        <div className='back-image bg-img parallaxie' data-background={data[0].image}></div>
-
-        <div className='row justify-content-center'>
-          <div className='col-lg-8'>
-            <div className='text-center mt-50'>
-              <h5 className='fw-200'>Working collaboratively with brands and agencies worldwide. Designing and
-                developing websites and applications with a focus on interaction, motion and visual experience.</h5>
-            </div>
-          </div>
-        </div>
+        <div className='back-image bg-img parallaxie' data-background={project.images[3].url}></div>
 
         <div className='row mt-100'>
-          <div className='col-lg-4'>
+          <div className={`col-lg-${project.secondDescription && project.features ? '4' : '6'}`}>
             <div className='img md-mb50'>
-              <img src={data[0].image} alt=''/>
+              <img src={project.images[4].url} alt={project.images[4].alt}/>
             </div>
           </div>
           <div className='col-lg-7 offset-lg-1 valign'>
             <div className='text'>
-              <h5 className='fw-200'>Working collaboratively with brands and agencies worldwide. Designing and
-                developing websites and applications with a focus on interaction, motion and visual experience.</h5>
-              <ul className='rest list-arrow mt-50'>
-                <li>
+              {project.secondDescription && (<h5 className='fw-200'>{project.secondDescription}</h5>)}
+              {project.features && (
+                <ul className='rest list-arrow mt-50'>
+                  {project.features.map((feature, index) => (
+                    <li key={index}>
                   <span className='icon'>
                     <svg width='100%' height='100%' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
                       <path fillRule='evenodd' clipRule='evenodd'
@@ -97,39 +82,11 @@ function Content() {
                             fill='currentColor'></path>
                     </svg>
                   </span>
-                  <h6 className='inline fz-18'>Amazing communication.</h6>
-                </li>
-                <li className='mt-10'>
-                  <span className='icon'>
-                    <svg width='100%' height='100%' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path fillRule='evenodd' clipRule='evenodd'
-                            d='M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z'
-                            fill='currentColor'></path>
-                    </svg>
-                  </span>
-                  <h6 className='inline fz-18'>Best trendinf designing experience.</h6>
-                </li>
-                <li className='mt-10'>
-                  <span className='icon'>
-                    <svg width='100%' height='100%' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path fillRule='evenodd' clipRule='evenodd'
-                            d='M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z'
-                            fill='currentColor'></path>
-                    </svg>
-                  </span>
-                  <h6 className='inline fz-18'>Email &amp; Live chat.</h6>
-                </li>
-                <li className='mt-10'>
-                  <span className='icon'>
-                    <svg width='100%' height='100%' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                      <path fillRule='evenodd' clipRule='evenodd'
-                            d='M7.71108 3.78684L8.22361 4.29813L7.71263 4.80992L4.64672 7.87832L4.13433 7.36688L6.87531 4.62335H1.11181H0.750039H0.388177L0.382812 0.718232H1.10645L1.11082 3.90005H6.80113L4.12591 1.22972L4.63689 0.718262L7.71108 3.78684Z'
-                            fill='currentColor'></path>
-                    </svg>
-                  </span>
-                  <h6 className='inline fz-18'>Amazing communication.</h6>
-                </li>
-              </ul>
+                      <h6 className='inline fz-18'>{feature.name}</h6>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </div>

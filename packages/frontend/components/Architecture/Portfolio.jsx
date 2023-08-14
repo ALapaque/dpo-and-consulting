@@ -21,7 +21,7 @@ function Portfolio() {
         <div className='row justify-content-center'>
           <div className='col-lg-5'>
             <div className='item md-mb80'>
-              <Link href={`/project/${encodeURIComponent(data[0].title)}`}>
+              <Link href={{pathname: '/project/[slug]', query: { slug: encodeURIComponent(data[0].title)} }}>
                 <div className='o-hidden'>
                   <div className='img imago wow'>
                     <img src={data[0].image} alt=''/>
@@ -38,7 +38,7 @@ function Portfolio() {
           </div>
           <div className='col-lg-6 valign'>
             <div className='item full-width'>
-              <Link href={`/project/${encodeURIComponent(data[1].title)}`}>
+              <Link href={{pathname: '/project/[slug]', query: { slug: encodeURIComponent(data[1].title)} }}>
                 <div className='row justify-content-center'>
                   <div className='col-lg-8'>
                     <div className='o-hidden'>
@@ -59,7 +59,7 @@ function Portfolio() {
           </div>
           <div className='col-lg-6 valign'>
             <div className='item mt-80 full-width'>
-              <Link href={`/project/${encodeURIComponent(data[2].title)}`}>
+              <Link href={{pathname: '/project/[slug]', query: { slug: encodeURIComponent(data[2].title)} }}>
                 <div className='row justify-content-center'>
                   <div className='col-lg-9'>
                     <div className='o-hidden'>
