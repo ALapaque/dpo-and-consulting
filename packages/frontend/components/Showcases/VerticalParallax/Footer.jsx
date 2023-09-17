@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 //= Data
-import data from '@/data/app-data.json';
+import data from '@/data/app-data';
 
 function Footer({ lightMode }) {
   useEffect(() => {

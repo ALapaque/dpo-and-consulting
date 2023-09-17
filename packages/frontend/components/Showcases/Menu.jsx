@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import data from '@/data/app-data.json'
+import data from '@/data/app-data'
 
 function Menu({ lightMode }) {
   function handleMouseEnter(event) {
@@ -70,45 +70,9 @@ function Menu({ lightMode }) {
                         <Link href={'/#projects'} className='sub-link'>Projects</Link>
                       </li>
                       <li>
-                        <Link href={'/#testimonials'} className='sub-link'>Testimonials</Link>
-                      </li>
-                      <li>
-                        <Link href={'/#news'} className='sub-link'>Latest news</Link>
-                      </li>
-                      <li>
                         <Link href={'/#contact'} className='sub-link'>Contact</Link>
                       </li>
                     </ul>
-                  </div>
-                </li>
-                <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                  <div className='o-hidden'>
-                    <Link href={'/#about-us'} className='link'>
-                      <span
-                        className='fill-text' data-text='About Us'>
-                        About Us
-                      </span>
-                    </Link>
-                  </div>
-                </li>
-                <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                  <div className='o-hidden'>
-                    <Link href={'/#projects'} className='link'>
-                      <span
-                        className='fill-text' data-text='Projects'>
-                        Projects
-                      </span>
-                    </Link>
-                  </div>
-                </li>
-                <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                  <div className='o-hidden'>
-                    <Link href={'/#contact'} className='link'>
-                      <span
-                        className='fill-text' data-text='Contact'>
-                        Contact
-                      </span>
-                    </Link>
                   </div>
                 </li>
               </ul>

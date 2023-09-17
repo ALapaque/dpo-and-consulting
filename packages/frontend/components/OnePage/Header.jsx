@@ -3,6 +3,7 @@ import Link from 'next/link';
 //= Scripts
 import parallaxie from '@/common/parallaxie';
 import RotatingCTA from '@/components/Common/RotatingCTA'
+import appData from '@/data/app-data';
 
 function Header() {
   useEffect(() => {
@@ -16,13 +17,13 @@ function Header() {
         <div className='row'>
           <div className='col-lg-8'>
             <div className='caption'>
-              <h5 className='fw-300 mb-15'>IT consulting agency</h5>
-              <h1 className='fz-80'>Professionalism is the keyword</h1>
+              <h5 className='fw-300 mb-15'>{appData.website.hero.title}</h5>
+              <h1 className='fz-80'>{appData.website.hero.subtitle}</h1>
             </div>
           </div>
           <div className='col-lg-4 d-flex align-items-end justify-content-end justify-end'>
             <div className='d-flex align-items-center'>
-              <RotatingCTA  href={'#services'} label={'Nos services'}/>
+              <RotatingCTA  href={appData.website.hero.cta.href} label={appData.website.hero.cta.title}/>
             </div>
           </div>
         </div>

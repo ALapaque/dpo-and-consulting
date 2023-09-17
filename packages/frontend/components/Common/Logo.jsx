@@ -1,5 +1,5 @@
+import appData from '@/data/app-data'
 import styled from '@emotion/styled'
-import data from '@/data/app-data.json'
 
 const LogoWrapper = styled.h1`
   font-size: 1.5em;
@@ -10,6 +10,6 @@ const LogoWrapper = styled.h1`
 
 export default function Logo() {
   return (
-    <LogoWrapper className={'logo'}>{data.company.name}</LogoWrapper>
+    <LogoWrapper className={'logo'}>{appData.company.name}</LogoWrapper>
   )
 }

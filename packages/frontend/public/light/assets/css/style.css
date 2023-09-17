@@ -5381,6 +5381,7 @@ body.loaded {
   border-radius: 10px;
   background: transparent;
   padding: 15px;
+  color: rgb(43 43 43);
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;

@@ -1,7 +1,13 @@
-import React from 'react';
-import data from '@/data/app-data.json';
+import appData from '@/data/app-data';
 
 function Contact() {
+  const _handleOnSubmit = (event) => {
+    event.preventDefault()
+    event.stopPropagation()
+
+    window.open(`mailto:${ event.target[0].value }?subject=${ event.target[2].value } - ${ event.target[0].value }&body=${ event.target[3].value }`, '_blank')
+  }
+
   return (
     <section id={'contact'} className='contact-crev no-crev section-padding'>
       <div className='container'>
@@ -15,20 +21,20 @@ function Contact() {
               <p className='fz-15 mt-10'>If you would like to work with us or just want to get in touch, we’d love to
                 hear from you!</p>
               <div className='phone fz-30 fw-600 mt-30 underline main-color'>
-                <a href='#0'>{data.company.phone}</a>
+                <a href='#0'>{appData.company.phone}</a>
               </div>
-              {data.company.facebook || data.company.linkedin && (
+              {appData.company.facebook || appData.company.linkedin && (
                 <ul className='rest social-text d-flex mt-60'>
-                  {data.company.facebook && (
+                  {appData.company.facebook && (
                     <li className='mr-30'>
-                      <a href={data.company.facebook} className='hover-this'><span
+                      <a href={appData.company.facebook} className='hover-this'><span
                         className='hover-anim'>Facebook</span></a>
                     </li>
                   )}
 
-                  {data.company.linkedin && (
+                  {appData.company.linkedin && (
                     <li>
-                      <a href={data.company.linkedin} className='hover-this'><span
+                      <a href={appData.company.linkedin} className='hover-this'><span
                         className='hover-anim'>LinkedIn</span></a>
                     </li>
                   )}
@@ -38,7 +44,15 @@ function Contact() {
           </div>
           <div className='col-lg-6 offset-lg-1 valign'>
             <div className='full-width'>
-              <form id='contact-form' method='post' action='contact.php'>
+              <form
+              id='contact-form'
+              method='post'
+              onSubmit={_handleOnSubmit}
+              style={{
+                'input, textarea': {
+                  color: 'red'
+                }
+              }}>
                 <div className='messages'></div>
                 <div className='controls row'>
                   <div className='col-lg-6'>

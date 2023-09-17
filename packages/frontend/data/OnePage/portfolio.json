@@ -2,99 +2,215 @@
   {
     "id": 1,
     "image": "/assets/images/portfolio/gallery/messenger/1.png",
+    "link": "https://messenger.amaury-lapaque.io",
     "images": [
       {
-        "url": "/assets/images/portfolio/gallery/messenger/1.png",
+        "url": "/assets/images/portfolio/gallery/messenger/2.png",
         "alt": "Messenger"
       },
       {
-        "url": "/assets/images/portfolio/gallery/messenger/1.png",
+        "url": "/assets/images/portfolio/gallery/messenger/3.png",
         "alt": "Messenger"
       },
       {
-        "url": "/assets/images/portfolio/gallery/messenger/1.png",
+        "url": "/assets/images/portfolio/gallery/messenger/4.png",
         "alt": "Messenger"
       },
       {
-        "url": "/assets/images/portfolio/gallery/messenger/1.png",
+        "url": "/assets/images/portfolio/gallery/messenger/5.png",
         "alt": "Messenger"
       },
       {
-        "url": "/assets/images/portfolio/gallery/messenger/1.png",
+        "url": "/assets/images/portfolio/gallery/messenger/6.png",
         "alt": "Messenger"
       }
     ],
     "number": "01.",
     "type": "Web application",
     "title": "Messenger",
-    "text": "Here a basic clone of messenger, using realtime technology (Pusher)"
+    "text": "This software provides a private messaging solution",
+    "description": "made with: ",
+    "tags": [
+      {
+        "values": ["NextJS", "React", "Firebase"]
+      },
+      {
+        "values": ["Tailwind", "Pusher", "Typescript"]
+      }
+    ],
+    "secondDescription": "This solution offers the following features:",
+    "features": [
+      {
+        "name": "Realtime discussion"
+      },
+      {
+        "name": "Private groups"
+      },
+      {
+        "name": "Sending pictures"
+      },
+      {
+        "name": "SEO login (Github & Google)"
+      },
+      {
+        "name": "..."
+      }
+    ]
   },
   {
     "id": 2,
     "image": "/assets/images/portfolio/gallery/my-planning/1.png",
     "images": [
       {
-        "url": "/assets/images/portfolio/gallery/my-planning/1.png",
+        "url": "/assets/images/portfolio/gallery/my-planning/2.png",
         "alt": "My planning"
       },
       {
-        "url": "/assets/images/portfolio/gallery/my-planning/1.png",
+        "url": "/assets/images/portfolio/gallery/my-planning/3.png",
         "alt": "My planning"
       },
       {
-        "url": "/assets/images/portfolio/gallery/my-planning/1.png",
+        "url": "/assets/images/portfolio/gallery/my-planning/4.png",
         "alt": "My planning"
       },
       {
-        "url": "/assets/images/portfolio/gallery/my-planning/1.png",
+        "url": "/assets/images/portfolio/gallery/my-planning/5.png",
         "alt": "My planning"
       },
       {
-        "url": "/assets/images/portfolio/gallery/my-planning/1.png",
-        "alt": "My planning"
-      },
-      {
-        "url": "/assets/images/portfolio/gallery/my-planning/1.png",
+        "url": "/assets/images/portfolio/gallery/my-planning/6.png",
         "alt": "My planning"
       }
     ],
     "number": "02.",
     "type": "SaaS",
     "title": "My planning",
-    "text": "This software was a team of speechtherapist in order to manage their daily tasks"
+    "text": "This software was design to help teams to planified and share events",
+    "description": "made with: ",
+    "tags": [
+      {
+        "values": ["Angular", "Spring Boot", "RxJs"]
+      },
+      {
+        "values": ["Nebular", "TypeScript", "Java"]
+      }
+    ],
+    "secondDescription": "This solution offers the following features:",
+    "features": [
+      {
+        "name": "Agenda / events sharing"
+      },
+      {
+        "name": "Privacy events"
+      },
+      {
+        "name": "Meeting report encoding"
+      },
+      {
+        "name": "Event linked discussion"
+      },
+      {
+        "name": "Multiplatform meeting support (meet / zoom / ...)"
+      },
+      {
+        "name": "Multiple views layout (Day, Week, Work-week, Month, Year, Timeline, ..."
+      },
+      {
+        "name": "..."
+      }
+    ]
   },
   {
     "id": 3,
     "image": "/assets/images/portfolio/gallery/jk-studio/1.png",
     "images": [
       {
-        "url": "/assets/images/portfolio/gallery/jk-studio/1.png",
+        "url": "/assets/images/portfolio/gallery/jk-studio/2.png",
         "alt": "Jk studio"
       },
       {
-        "url": "/assets/images/portfolio/gallery/jk-studio/1.png",
+        "url": "/assets/images/portfolio/gallery/jk-studio/3.png",
         "alt": "Jk studio"
       },
       {
-        "url": "/assets/images/portfolio/gallery/jk-studio/1.png",
+        "url": "/assets/images/portfolio/gallery/jk-studio/4.png",
         "alt": "Jk studio"
       },
       {
-        "url": "/assets/images/portfolio/gallery/jk-studio/1.png",
+        "url": "/assets/images/portfolio/gallery/jk-studio/5.png",
         "alt": "Jk studio"
       },
       {
-        "url": "/assets/images/portfolio/gallery/jk-studio/1.png",
-        "alt": "Jk studio"
-      },
-      {
-        "url": "/assets/images/portfolio/gallery/jk-studio/1.png",
+        "url": "/assets/images/portfolio/gallery/jk-studio/6.png",
         "alt": "Jk studio"
       }
     ],
+    "link": "https://jkstudio.fr",
     "number": "03.",
     "type": "Website",
     "title": "Jk studio",
-    "text": "This is a website made for a friend of mine who is a photographer and wanted to be able to display is work to his potential clients"
+    "text": "Photographer portfolio",
+    "description": "made with: ",
+    "tags": [
+      {
+        "values": ["Wordpress", "PHP"]
+      }
+    ],
+    "secondDescription": "This solution offers the following features:",
+    "features": [
+      {
+        "name": "Project showcase"
+      },
+      {
+        "name": "Portfolio generation with categories"
+      },
+      {
+        "name": "Contact form"
+      },
+      {
+        "name": "Link to the wordpress CMS, easy customisation"
+      },
+      {
+        "name": "..."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "/assets/images/portfolio/gallery/tesla/1.jpg",
+    "images": [
+      {
+        "url": "/assets/images/portfolio/gallery/tesla/2.png",
+        "alt": "tesla"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/tesla/3.png",
+        "alt": "tesla"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/tesla/4.png",
+        "alt": "tesla"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/tesla/5.png",
+        "alt": "tesla"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/tesla/6.png",
+        "alt": "tesla"
+      }
+    ],
+    "link": "https://tesla.amaury-lapaque.io/",
+    "number": "04.",
+    "type": "Website",
+    "title": "Tesla",
+    "text": "Clone of the original tesla website",
+    "description": "made with: ",
+    "tags": [
+      {
+        "values": ["ReactJS", "Emotion"]
+      }
+    ],
+    "secondDescription": "This project was made for training animation technologies"
   }
 ]

@@ -15,6 +15,7 @@ import Contact from '@/components/OnePage/Contact';
 import Footer from '@/components/OnePage/Footer';
 import Navigation from '@/components/Showcases/Navigation';
 import Menu from '@/components/Showcases/Menu';
+import appData from '@/data/app-data';
 
 
 function HomeOnePageLight() {
@@ -26,7 +27,7 @@ function HomeOnePageLight() {
   return (
     <>
       <Head>
-        <title>DPO and Consulting</title>
+        <title>{appData.website.name}</title>
       </Head>
 
       <Loader />
@@ -38,7 +39,6 @@ function HomeOnePageLight() {
         <Marq />
         <Services />
         <Portfolio />
-        <ImageSection />
         <Contact />
       </main>
       <Footer lightMode />

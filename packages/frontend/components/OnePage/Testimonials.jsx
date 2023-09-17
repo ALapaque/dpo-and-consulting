@@ -7,7 +7,7 @@ import loadBackgroudImages from '@/common/loadBackgroudImages';
 //= Data
 import testimonialsData from '@/data//OnePage/testimonials.json';
 import brandsData from '@/data/OnePage/brands.json';
-import appData from '@/data/app-data.json';
+import appData from '@/data/app-data';
 
 const testimonialsSwiperOptions = {
   modules: [Navigation, Autoplay],

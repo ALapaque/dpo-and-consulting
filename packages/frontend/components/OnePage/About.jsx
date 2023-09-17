@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 function About() {
@@ -7,7 +8,7 @@ function About() {
         <div className='row md-marg'>
           <div className='col-lg-6 valign'>
             <div className='cont md-mb50'>
-              <h6 className='sub-title opacity-8 wow fadeInUp'>About Us.</h6>
+              <h6 className='sub-title opacity-8 wow fadeInUp'>About Me.</h6>
               <h2 className='d-slideup wow'>
                 <span className='sideup-text'>
                   <span className='up-text'>We are a team of <span className='sub-font'>passionated</span></span>
@@ -28,9 +29,11 @@ function About() {
                 boxShadow: '-19px 24px 15px -3px rgba(0,0,0,0.1)'
               }}
             >
-              <img
-                src='assets/images/hero_1.jpg'
+              <Image
+                src='/assets/images/hero_1.jpg'
                 alt='alt'
+                width={500}
+                height={500}
                 style={{ borderRadius: '8px' }}
               />
               <div className='exp main-bg'>

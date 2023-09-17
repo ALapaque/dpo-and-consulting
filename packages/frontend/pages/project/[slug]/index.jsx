@@ -13,7 +13,7 @@ import Menu from '@/components/Showcases/Menu'
 import Footer from '@/components/OnePage/Footer'
 import { useRouter } from 'next/router'
 import data from '@/data/OnePage/portfolio.json';
-import appData from '@/data/app-data.json';
+import appData from '@/data/app-data';
 
 
 function ProjectDetailsLight() {
