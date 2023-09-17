@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useMemo } from 'react';
 //= Packages
 import Head from 'next/head';
 //= Layout
@@ -10,15 +10,17 @@ import About from '@/components/OnePage/About';
 import Marq from '@/components/OnePage/Marq';
 import Services from '@/components/OnePage/Services';
 import Portfolio from '@/components/Architecture/Portfolio';
-import ImageSection from '@/components/OnePage/Image';
 import Contact from '@/components/OnePage/Contact';
 import Footer from '@/components/OnePage/Footer';
 import Navigation from '@/components/Showcases/Navigation';
 import Menu from '@/components/Showcases/Menu';
 import appData from '@/data/app-data';
+import useMenu from '@/hooks/useMenu';
 
 
 function HomeOnePageLight() {
+  const { isOpen, toggle, close: closeDrawer } = useMenu(true, true)
+
   useEffect(() => {
     document.body.classList.add('sub-bg');
     return () => document.body.classList.remove('sub-bg');
@@ -31,8 +33,8 @@ function HomeOnePageLight() {
       </Head>
 
       <Loader />
-      <Navigation darkOnScroll lightMode />
-      <Menu lightMode={false} />
+      <Navigation isOpen={isOpen} toggle={toggle} darkOnScroll />
+      <Menu closeDrawer={closeDrawer} lightMode={false} />
       <main className="main-bg">
         <Header />
         <About />

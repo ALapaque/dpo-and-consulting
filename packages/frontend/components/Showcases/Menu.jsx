@@ -1,8 +1,7 @@
-import React from 'react';
 import Link from 'next/link';
 import data from '@/data/app-data'
 
-function Menu({ lightMode }) {
+function Menu({ closeDrawer, lightMode }) {
   function handleMouseEnter(event) {
     document.querySelectorAll('ul.main-menu li').forEach(item => {
       item.classList.add('hoverd');
@@ -61,16 +60,16 @@ function Menu({ lightMode }) {
                   <div className='sub-menu'>
                     <ul>
                       <li>
-                        <Link href={'/#about'} className='sub-link'>About us</Link>
+                        <Link onClick={closeDrawer} href={'/#about'} className='sub-link'>About us</Link>
                       </li>
                       <li>
-                        <Link href={'/#services'} className='sub-link'>Services</Link>
+                        <Link onClick={closeDrawer} href={'/#services'} className='sub-link'>Services</Link>
                       </li>
                       <li>
-                        <Link href={'/#projects'} className='sub-link'>Projects</Link>
+                        <Link onClick={closeDrawer} href={'/#projects'} className='sub-link'>Projects</Link>
                       </li>
                       <li>
-                        <Link href={'/#contact'} className='sub-link'>Contact</Link>
+                        <Link onClick={closeDrawer} href={'/#contact'} className='sub-link'>Contact</Link>
                       </li>
                     </ul>
                   </div>

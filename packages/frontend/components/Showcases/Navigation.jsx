@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react';
 import Logo from '@/components/Common/Logo'
-import useMenu from '@/hooks/useMenu'
 import Link from 'next/link'
 
-function Navigation({ lightMode, alwaysDark, darkOnScroll }) {
-  const { isOpen, toggle } = useMenu(lightMode, alwaysDark)
-
+function Navigation({ isOpen, toggle, lightMode, alwaysDark, darkOnScroll }) {
   useEffect(() => {
     if (darkOnScroll) {
       let nav = document.querySelector('#navi');
