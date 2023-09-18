@@ -3,9 +3,11 @@ import Link from 'next/link';
 //= Scripts
 import parallaxie from '@/common/parallaxie';
 import data from '@/data/OnePage/portfolio.json';
+import useIsMobile from '@/hooks/useIsMobile';
 
 function CallToAction({ project }) {
   const [ nextProject, setNextProject ] = useState()
+  const { isMobile } = useIsMobile()
   const linkHref = nextProject ?
     { pathname: '/project/[slug]', query: { slug: encodeURIComponent(nextProject.title) } }
     : '/'
@@ -15,7 +17,7 @@ function CallToAction({ project }) {
       return
     }
 
-    parallaxie('.sec-bg-img.parallaxie', 0.4);
+    parallaxie('.sec-bg-img.parallaxie', 0.4, undefined, isMobile);
     const index = data.findIndex(item => item.title === project.title)
 
     if (index !== -1) {

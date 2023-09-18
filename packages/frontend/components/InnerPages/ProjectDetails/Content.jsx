@@ -7,7 +7,7 @@ function Content({ project }) {
   const isMobile = useIsMobile()
 
   useEffect(() => {
-    parallaxie('.back-image.parallaxie', 0.4);
+    parallaxie('.back-image.parallaxie', 0.4, undefined, isMobile);
   }, [project]);
 
   return (
