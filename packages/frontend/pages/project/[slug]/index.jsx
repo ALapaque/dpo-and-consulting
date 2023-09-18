@@ -4,7 +4,6 @@ import Head from 'next/head';
 //= Layout
 import Layout from '@/layouts/default';
 //= Components
-import Loader from '@/components/Common/Loader';
 import Header from '@/components/InnerPages/ProjectDetails/Header';
 import Content from '@/components/InnerPages/ProjectDetails/Content';
 import CallToAction from '@/components/InnerPages/ProjectDetails/CallToAction';
@@ -14,7 +13,6 @@ import Footer from '@/components/OnePage/Footer'
 import { useRouter } from 'next/router'
 import data from '@/data/OnePage/portfolio.json';
 import appData from '@/data/app-data';
-
 
 function ProjectDetailsLight() {
   const [ project, setProject ] = useState()
@@ -34,11 +32,11 @@ function ProjectDetailsLight() {
 
   useEffect(() => {
     document.body.classList.add('main-bg');
+    
     return () => document.body.classList.remove('main-bg');
   }, []);
 
   useEffect(() => {
-    console.log('slug', slug)
     _getProject()
   }, [slug])
 
@@ -52,7 +50,6 @@ function ProjectDetailsLight() {
         <title>{appData.company.name} - {project.title}</title>
       </Head>
 
-      <Loader />
       <Navigation darkOnScroll lightMode />
       <Menu lightMode={false} />
       <main>
