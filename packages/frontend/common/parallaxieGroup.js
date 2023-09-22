@@ -11,6 +11,8 @@ export default function parallaxie(selector, speed = 0.8, startPosition) {
 
       elementBg.style.backgroundImage = `url("${image}")`;
       elementBg.style.backgroundSize = 'cover';
+      elementBg.style['-webkit-background-size'] = 'cover';
+      elementBg.style['-moz-background-size'] = 'cover';
       elementBg.style.backgroundRepeat = 'no-repeat';
       elementBg.style.backgroundAttachment = 'fixed';
       elementBg.style.backgroundPosition = `center ${startPosition !== undefined ? startPosition : position}px`;
