@@ -9785,8 +9785,8 @@ header.in-box {
     font-size: 13px;
   }
   .progress-wrap {
-    right: 10px;
-    bottom: 20px;
+    bottom: 100px;
+    right: 28px;
   }
   .topnav .logo {
     width: 100px;
