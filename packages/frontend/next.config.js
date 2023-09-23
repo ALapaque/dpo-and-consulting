@@ -12,6 +12,19 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/robots.txt',
+        destination: '/api/robots'
+      },
+      {
+        source: '/sitemap.xml',
+        destination: '/api/sitemap'
+      }
+    ];
+
+  },
 
   compiler: {
     // For other options, see https://nextjs.org/docs/architecture/nextjs-compiler#emotion
