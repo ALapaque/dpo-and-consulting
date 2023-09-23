@@ -103,7 +103,7 @@ function Services({ lightMode }) {
                             __html: item.text
                           }}/>
                         )}
-                        <Link href={`/service/${encodeURIComponent(item.title)}`} className='arrow mt-40'>
+                        {/*<Link href={`/service/${encodeURIComponent(item.title)}`} className='arrow mt-40'>
                           <span className='circle'>
                             <svg width='18' height='18' viewBox='0 0 18 18' fill='none'
                                  xmlns='http://www.w3.org/2000/svg'>
@@ -113,7 +113,7 @@ function Services({ lightMode }) {
                             </svg>
                           </span>
                           <span className='fz-12 text-u ml-10'>Read More</span>
-                        </Link>
+                        </Link>*/}
                       </div>
                     </SwiperSlide>
                   ))

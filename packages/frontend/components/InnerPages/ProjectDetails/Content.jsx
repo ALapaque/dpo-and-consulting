@@ -66,10 +66,7 @@ function Content({ project }) {
           </div>
         </div>
         <div
-          className='row md-marg mt-50'
-          style={{
-            width: isMobile ? '100vw' : 'auto'
-          }}>
+          className='row md-marg mt-50'>
           <div className='col-lg-4'>
             <div className='img mb-50'>
               <img src={project.images[0].url} alt={project.images[0].alt}/>
