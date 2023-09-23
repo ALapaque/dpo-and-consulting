@@ -12,7 +12,9 @@ function Content({ project }) {
 
   return (
     <section className='section-padding'>
-      <div className='container'>
+      <div
+          className='container'
+      >
         <div className='row'>
           <div className={`col-lg-${project.description && project.tags ? '7' : '8'}`}>
             <div className='text'>

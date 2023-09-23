@@ -1,14 +1,27 @@
-import React, { useEffect, useState } from 'react';
-import PlatformUtils from '@/utils/PlatformUtils'
+import {useEffect, useState} from 'react';
 
-const MobileDetector = () => {
-  const [ isMobile, setIsMobile ] = useState(false);
+const useIsMobile = () => {
+    const [isMobile, setIsMobile] = useState(true);
 
-  useEffect(() => {
-    setIsMobile(PlatformUtils(window).isMobile)
-  }, [ setIsMobile ])
+    const handleResize = () => {
+        const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        setIsMobile(screenWidth < 768); // Adjust the threshold based on your design
+    };
 
-  return isMobile
+    useEffect(() => {
+        // Initial check on mount
+        handleResize();
+
+        // Listen for window resize events
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    return {isMobile};
 };
 
-export default MobileDetector;
+export default useIsMobile;

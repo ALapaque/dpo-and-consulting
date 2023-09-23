@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 //= Scripts
 import parallaxie from '@/common/parallaxie';
+import useIsMobile from "@/hooks/useIsMobile";
 
 function Image() {
+  const { isMobile } = useIsMobile();
+
   useEffect(() => {
-    parallaxie('.back-image.parallaxie');
+    parallaxie('.back-image.parallaxie', 0.8, undefined, isMobile);
   }, []);
 
   return (

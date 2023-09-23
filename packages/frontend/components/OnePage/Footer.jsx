@@ -49,14 +49,6 @@ function Footer({ lightMode }) {
                   }}
                 >
                   <h6 style={{ margin: 0, padding: 0}}>Say Hello</h6>
-                  <img
-                    src={'assets/images/confetti.gif'}
-                    alt={'confetti'}
-                    style={{
-                      height: '40px',
-                      width: '40px'
-                    }}
-                  />
                 </div>
                 <div className="text">
                   <p className="mb-10">
@@ -102,7 +94,7 @@ function Footer({ lightMode }) {
               <div className="col-lg-8">
                 <div className="copyright d-flex">
                   <div className="ml-auto">
-                    <p className="fz-13">© 2023 {appData.website.name} is Proudly Powered by <span className="underline"><a href={appData.author.link} target="_blank">{appData.author.name}</a></span></p>
+                    <p className="fz-13">© 2023 {appData.website.name} is Powered by <span className="underline"><a href={appData.author.link} target="_blank">{appData.author.name}</a></span></p>
                   </div>
                 </div>
               </div>

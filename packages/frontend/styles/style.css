@@ -1,18 +1,5 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Geekfolio
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* Variables
------------------------------------------------------------------*/
-/* Typography
------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -823,8 +810,8 @@ img {
 
 .progress-wrap {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 100px;
+  right: 28px;
   height: 44px;
   width: 44px;
   cursor: pointer;
@@ -4200,7 +4187,7 @@ body.loaded {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding: 30px;
+  padding: 10px 20px;
   z-index: 3;
 }
 
@@ -5798,7 +5785,7 @@ footer .bg-pattern {
 }
 
 .proj-header1 .bg-img {
-  width: 100%;
+  width: 100vw;
   height: 70vh;
 }
 

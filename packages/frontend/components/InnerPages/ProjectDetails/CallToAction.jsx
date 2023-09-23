@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 //= Scripts
 import parallaxie from '@/common/parallaxie';
@@ -17,13 +17,13 @@ function CallToAction({ project }) {
       return
     }
 
-    parallaxie('.sec-bg-img.parallaxie', 0.4, undefined, isMobile);
+    parallaxie('.sec-bg-img.parallaxie', 0.1, undefined, isMobile);
     const index = data.findIndex(item => item.title === project.title)
 
     if (index !== -1) {
       setNextProject(data[index + 1])
     }
-  }, [ project ])
+  }, [ project, isMobile ])
 
   return (
     <section className='call-action-img'>

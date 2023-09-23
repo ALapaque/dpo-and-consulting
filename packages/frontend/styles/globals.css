@@ -109,3 +109,7 @@ body {
 .light.shop-cart .counter input {
   color: #000;
 }
+
+img {
+  image-rendering: optimizequality;
+}

@@ -1,4 +1,4 @@
-export default function parallaxie(selector, speed = 0.8, startPosition, isMobile = false) {
+export default function parallaxie(selector, speed = 0.8, startPosition, isMobile = true) {
   let elementBg = document.querySelector(selector);
   let image = elementBg.getAttribute("data-background");
   if (!image) {
@@ -8,10 +8,8 @@ export default function parallaxie(selector, speed = 0.8, startPosition, isMobil
 
   elementBg.style.backgroundImage = `url("${image}")`;
   elementBg.style.backgroundSize = 'cover';
-  elementBg.style['-webkit-background-size'] = 'cover';
-  elementBg.style['-moz-background-size'] = 'cover';
   elementBg.style.backgroundRepeat = 'no-repeat';
-  elementBg.style.backgroundAttachment = isMobile ? 'unset' : 'fixed';
+  elementBg.style.backgroundAttachment = isMobile ? 'scroll' : 'fixed';
   elementBg.style.backgroundPosition = `center ${startPosition !== undefined ? startPosition : position}px`;
 
   window.addEventListener('scroll', () => {

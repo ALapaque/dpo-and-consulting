@@ -11,13 +11,13 @@ function About() {
               <h6 className='sub-title opacity-8 wow fadeInUp'>About Me.</h6>
               <h2 className='d-slideup wow'>
                 <span className='sideup-text'>
-                  <span className='up-text'>We are a team of <span className='sub-font'>passionated</span></span>
+                  <span className='up-text'>I am a <span className='sub-font'>passionated</span> developer</span>
                 </span>
                 <span className='sideup-text'>
-                  <span className='up-text'>Our goal, is to transform</span>
+                  <span className='up-text'>always looking to learn</span>
                 </span>
                 <span className='sideup-text'>
-                  <span className='up-text'>your need in a solution</span>
+                  <span className='up-text'>new technologies and languages</span>
                 </span>
               </h2>
             </div>
@@ -26,6 +26,7 @@ function About() {
             <div
               className='img'
               style={{
+                borderRadius: '8px',
                 boxShadow: '-19px 24px 15px -3px rgba(0,0,0,0.1)'
               }}
             >
@@ -34,10 +35,13 @@ function About() {
                 alt='alt'
                 width={500}
                 height={500}
-                style={{ borderRadius: '8px' }}
+                style={{
+                  borderRadius: '8px',
+                  transform: 'scaleX(-1)'
+              }}
               />
               <div className='exp main-bg'>
-                <h2>5+</h2>
+                <h2>4+</h2>
                 <h6 className='sub-title'>Years Of Experience</h6>
               </div>
             </div>

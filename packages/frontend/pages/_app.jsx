@@ -6,9 +6,12 @@ import Head from 'next/head';
 import '@/styles/modal-video.css';
 import 'swiper/css/bundle';
 import '@/styles/globals.css';
+import useEventTracker from "@/hooks/useEventTracker";
 
 function App({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
+
+  useEventTracker();
 
   return getLayout(
     <>
