@@ -1,5 +1,133 @@
 [
   {
+    "id": 999,
+    "image": "/assets/images/portfolio/gallery/easyorderapp/hawaiian/1.png",
+    "link": "https://app.hawaiianpokebowl.be/",
+    "images": [
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/hawaiian/2.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/hawaiian/3.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/hawaiian/4.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/hawaiian/5.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/hawaiian/6.png",
+        "alt": "Hawaiian"
+      }
+    ],
+    "type": "Crossplatform application",
+    "company": {
+      "name": "@EasyOrderApp",
+      "href": "https://easyorderapp.com"
+    },
+    "title": "Hawaiian pokebowl",
+    "text": "Online ordering experience for your food business's customers comes with a mobile app and a direct ordering webpage in your brand design. Commission-free and easy.",
+    "description": "made with: ",
+    "tags": [
+      {
+        "values": ["NextJS", "React", "Redux"]
+      },
+      {
+        "values": ["Emotion", "Typescript"]
+      }
+    ],
+    "secondDescription": "This solution offers the following features:",
+    "features": [
+      {
+        "name": "Branded app"
+      },
+      {
+        "name": "Direct Ordering Solution"
+      },
+      {
+        "name": "Customer Loyalty integration (piggy, joyn, ...)"
+      },
+      {
+        "name": "Marketing campaign"
+      },
+      {
+        "name": "Online reservation"
+      },
+      {
+        "name": "..."
+      }
+    ]
+  },
+  {
+    "id": 998,
+    "image": "/assets/images/portfolio/gallery/easyorderapp/marketplace/1.png",
+    "link": "https://supermark.etterbeek.brussels/",
+    "images": [
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/marketplace/2.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/marketplace/3.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/marketplace/4.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/marketplace/5.png",
+        "alt": "Hawaiian"
+      },
+      {
+        "url": "/assets/images/portfolio/gallery/easyorderapp/marketplace/6.png",
+        "alt": "Hawaiian"
+      }
+    ],
+    "type": "Crossplatform application",
+    "company": {
+      "name": "@EasyOrderApp",
+      "href": "https://easyorderapp.com"
+    },
+    "title": "Supermark'Ett",
+    "text": "This solutions offers a marketplace platform to the city of Etterbeek. It allows local shops to sell their products online and to be delivered to the customers.",
+    "description": "made with: ",
+    "tags": [
+      {
+        "values": ["NextJS", "React", "Redux"]
+      },
+      {
+        "values": ["Emotion", "Typescript"]
+      }
+    ],
+    "secondDescription": "This solution offers the following features:",
+    "features": [
+      {
+        "name": "Branded app"
+      },
+      {
+        "name": "Direct Ordering Solution"
+      },
+      {
+        "name": "Customer Loyalty integration (piggy, joyn, ...)"
+      },
+      {
+        "name": "Marketing campaign"
+      },
+      {
+        "name": "Online reservation"
+      },
+      {
+        "name": "..."
+      }
+    ]
+  },
+  {
     "id": 1,
     "image": "/assets/images/portfolio/gallery/messenger/1.png",
     "link": "https://messenger.amaury-lapaque.io",
@@ -25,7 +153,6 @@
         "alt": "Messenger"
       }
     ],
-    "number": "01.",
     "type": "Web application",
     "title": "Messenger",
     "text": "This software provides a private messaging solution",
@@ -82,7 +209,6 @@
         "alt": "My planning"
       }
     ],
-    "number": "02.",
     "type": "SaaS",
     "title": "My planning",
     "text": "This software was design to help teams to planified and share events",
@@ -146,7 +272,6 @@
       }
     ],
     "link": "https://jkstudio.fr",
-    "number": "03.",
     "type": "Website",
     "title": "Jk studio",
     "text": "Photographer portfolio",
@@ -201,7 +326,6 @@
       }
     ],
     "link": "https://tesla.amaury-lapaque.io/",
-    "number": "04.",
     "type": "Website",
     "title": "Tesla",
     "text": "Clone of the original tesla website",
