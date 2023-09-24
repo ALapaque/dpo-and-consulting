@@ -15,7 +15,6 @@ body {
   transform: none;
 }
 
-
 .swiper-controls .swiper-button-prev,
 .swiper-controls .swiper-button-next {
   position: static;
@@ -27,15 +26,24 @@ body {
   display: none;
 }
 
-.swiper-controls.arrow-out .swiper-button-prev:hover .left.left:not(.light .swiper-controls.arrow-out .left),
-.swiper-controls.arrow-out .swiper-button-prev:hover .right:not(.light .swiper-controls.arrow-out .right),
-.swiper-controls.arrow-out .swiper-button-next:hover .left.left:not(.light .swiper-controls.arrow-out .left),
-.swiper-controls.arrow-out .swiper-button-next:hover .right:not(.light .swiper-controls.arrow-out .right) {
+.swiper-controls.arrow-out
+  .swiper-button-prev:hover
+  .left.left:not(.light .swiper-controls.arrow-out .left),
+.swiper-controls.arrow-out
+  .swiper-button-prev:hover
+  .right:not(.light .swiper-controls.arrow-out .right),
+.swiper-controls.arrow-out
+  .swiper-button-next:hover
+  .left.left:not(.light .swiper-controls.arrow-out .left),
+.swiper-controls.arrow-out
+  .swiper-button-next:hover
+  .right:not(.light .swiper-controls.arrow-out .right) {
   background: rgba(255, 255, 255, 0.05);
 }
 
 .swiper-controls.arrow-out .left:not(.light .swiper-controls.arrow-out .left),
-.swiper-controls.arrow-out .right:not(.light .swiper-controls.arrow-out .right) {
+.swiper-controls.arrow-out
+  .right:not(.light .swiper-controls.arrow-out .right) {
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -56,12 +64,15 @@ body {
   margin: 0 7px;
 }
 
-.testim-clasic.light .swiper-pagination-bullet, .work-carsouel.light .swiper-pagination-bullet {
+.testim-clasic.light .swiper-pagination-bullet,
+.work-carsouel.light .swiper-pagination-bullet {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.swiper-pagination-bullet-active, .testim-clasic.light .swiper-pagination-bullet-active, .work-carsouel.light .swiper-pagination-bullet-active {
-  background: #c9f31d;
+.swiper-pagination-bullet-active,
+.testim-clasic.light .swiper-pagination-bullet-active,
+.work-carsouel.light .swiper-pagination-bullet-active {
+  background: #1df3c1;
 }
 
 .testim-clasic .swiper-controls .swiper-pagination {
@@ -94,7 +105,7 @@ body {
   color: inherit;
 }
 .sub-menu > ul > li > * {
-  color: rgb(32,32,32) !important;
+  color: rgb(32, 32, 32) !important;
 }
 
 .accordion-info.sub-open {
