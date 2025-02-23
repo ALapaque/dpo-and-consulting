@@ -12,7 +12,7 @@ const Loader = ({ delayed = true, projectName }) => {
     const curve = 'M0 502S175 272 500 272s500 230 500 230V0H0Z';
     const flat = 'M0 2S175 1 500 1s500 1 500 1V0H0Z';
 
-    tl.to('.loader-wrap-heading .load-text , .loader-wrap-heading .cont', {
+    tl.to('.loader-wrap-heading .load-text , .loader-wrap-heading', {
       delay: delayed ? 1.5 : 0,
       y: -100,
       opacity: 0,
@@ -27,12 +27,6 @@ const Loader = ({ delayed = true, projectName }) => {
     );
     tl.to('.loader-wrap', { y: -500 });
     tl.to('.loader-wrap', { zIndex: -1, display: 'none' });
-    tl.from('header', { y: 200 });
-    tl.from('header .container', {
-      y: 40,
-      opacity: 0,
-      delay: delayed ? 0.3 : 0,
-    });
   }, []);
 
   return (

@@ -16,7 +16,7 @@ function App({ Component, pageProps }) {
   return getLayout(
     <>
       <Head>
-        <title>DPO and Consulting</title>
+        <title>Amaury Lapaque</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"

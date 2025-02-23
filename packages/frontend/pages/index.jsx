@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, {useEffect} from 'react';
 //= Packages
 import Head from 'next/head';
 //= Layout
@@ -16,7 +16,6 @@ import Navigation from '@/components/Showcases/Navigation';
 import Menu from '@/components/Showcases/Menu';
 import appData from '@/data/app-data';
 import useMenu from '@/hooks/useMenu';
-
 
 function HomeOnePageLight() {
   const { isOpen, toggle, close: closeDrawer } = useMenu(true, true)

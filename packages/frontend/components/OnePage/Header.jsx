@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import Link from 'next/link';
+import React, {useEffect} from 'react';
 //= Scripts
 import parallaxie from '@/common/parallaxie';
 import RotatingCTA from '@/components/Common/RotatingCTA'
@@ -7,7 +6,7 @@ import appData from '@/data/app-data';
 
 function Header() {
   useEffect(() => {
-    parallaxie(`header.parallaxie`, 0.2, -0.5);
+    parallaxie(`header.parallaxie`, 0.15, 0);
   }, []);
 
   return (

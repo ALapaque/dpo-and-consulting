@@ -27,6 +27,7 @@ function Portfolio() {
                   <div className='o-hidden'>
                     <div className='img imago wow'>
                       <Image
+                        loading={'eager'}
                         src={project.image}
                         alt={project.title}
                         width={500}
