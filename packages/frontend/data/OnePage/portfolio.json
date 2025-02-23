@@ -1,31 +1,31 @@
 [
   {
     "id": 1000,
-    "image": "/assets/images/portfolio/gallery/restomax/restomaxbook/A.png",
+    "image": "/assets/images/portfolio/gallery/restomax/restomaxbook/1.png",
     "link": "https://natithai.book.ezordr.app/",
     "images": [
       {
         "url": "/assets/images/portfolio/gallery/restomax/restomaxbook/2.png",
-        "alt": "Hawaiian"
+        "alt": "RestomaxBook-2"
       },
       {
         "url": "/assets/images/portfolio/gallery/restomax/restomaxbook/3.png",
-        "alt": "Hawaiian"
+        "alt": "RestomaxBook-3"
       },
       {
         "url": "/assets/images/portfolio/gallery/restomax/restomaxbook/4.png",
-        "alt": "Hawaiian"
+        "alt": "RestomaxBook-4"
       },
       {
         "url": "/assets/images/portfolio/gallery/restomax/restomaxbook/5.png",
-        "alt": "Hawaiian"
+        "alt": "RestomaxBook-5"
       },
       {
         "url": "/assets/images/portfolio/gallery/restomax/restomaxbook/6.png",
-        "alt": "Hawaiian"
+        "alt": "RestomaxBook-6"
       }
     ],
-    "type": "Website / Widget",
+    "type": "Website/Widget",
     "company": {
       "name": "@Restomax",
       "href": "https://restomax.be"

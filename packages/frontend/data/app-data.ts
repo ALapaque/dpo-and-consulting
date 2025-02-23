@@ -2,11 +2,11 @@ const appData = {
   website: {
     name: 'Amaury Lapaque',
     hero: {
-      title: "React / Angular / NestJS developer",
-      subtitle: "Passion is the key",
+      title: "React, Vue, Angular ❤️",
+      subtitle: "Frontend software developer",
       cta: {
-        href: "#services",
-        title: "My services"
+        href: "#projects",
+        title: "My projects"
       }
     },
   },

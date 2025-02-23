@@ -41,7 +41,7 @@ function About() {
               }}
               />
               <div className='exp main-bg'>
-                <h2>4+</h2>
+                <h2>5+</h2>
                 <h6 className='sub-title'>Years Of Experience</h6>
               </div>
             </div>

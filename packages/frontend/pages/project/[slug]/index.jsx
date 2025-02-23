@@ -38,7 +38,6 @@ function ProjectDetailsLight() {
   }, []);
 
   useEffect(() => {
-    console.log('SLUG changed', slug);
     _getProject();
   }, [slug]);
 
