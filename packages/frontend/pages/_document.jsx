@@ -5,8 +5,8 @@ export default function Document() {
     <Html lang="fr">
       <Head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="keywords" content="IT Consulting React Angular GDPR RGPD"/>
-        <meta name="description" content="DPO-and-Consulting, we'll help transforming ideas into real"/>
+        <meta name="keywords" content="frontend, development, vue, react, angular"/>
+        <meta name="description" content="Passionated software developer"/>
         <meta name="author" content="Amaury Lapaque"/>
 
         {/* ------ Images ------ */}
